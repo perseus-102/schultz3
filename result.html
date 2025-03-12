@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <link rel="stylesheet" href="CSS/Styles.css" />
+    <script defer src="result.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+
+    <div id="studentInfo">
+        <p><strong>Student Name:</strong> <span id="studentName"></span></p>
+        <p><strong>Final Grade:</strong> <span id="finalGrade"></span>%</p>
+    </div>
+
+    <h2>Detailed Feedback</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Q #</th>
+                <th>Correct/Incorrect</th>
+                <th>Correct Answer</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody id="feedbackTable">
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="CSS/Styles.css" />
+    <script defer src="page2.js"></script>
+</head>
+<body>
+    <h1>Welcome to Page 2</h1>
+
+    <div id="studentInfo">
+        <p><strong>Student Name:</strong> <span id="studentName"></span></p>
+    </div>
+
+    <form id="quizForm">
+        <h2>Additional Quiz Questions</h2>
+
+        <p>1. Which planet is known as the Red Planet?</p>
+        <input type="radio" id="q1a1" name="question4" value="Mars" required>
+        <label for="q1a1">Mars</label><br>
+        <input type="radio" id="q1a2" name="question4" value="Earth">
+        <label for="q1a2">Earth</label><br>
+        <input type="radio" id="q1a3" name="question4" value="Venus">
+        <label for="q1a3">Venus</label><br><br>
+
+        <p>2. What is the largest ocean on Earth?</p>
+        <input type="radio" id="q2a1" name="question5" value="Atlantic Ocean" required>
+        <label for="q2a1">Atlantic Ocean</label><br>
+        <input type="radio" id="q2a2" name="question5" value="Indian Ocean">
+        <label for="q2a2">Indian Ocean</label><br>
+        <input type="radio" id="q2a3" name="question5" value="Pacific Ocean">
+        <label for="q2a3">Pacific Ocean</label><br><br>
+
+        <p>3. Who wrote 'Romeo and Juliet'?</p>
+        <input type="radio" id="q3a1" name="question6" value="William Shakespeare" required>
+        <label for="q3a1">William Shakespeare</label><br>
+        <input type="radio" id="q3a2" name="question6" value="Charles Dickens">
+        <label for="q3a2">Charles Dickens</label><br>
+        <input type="radio" id="q3a3" name="question6" value="Mark Twain">
+        <label for="q3a3">Mark Twain</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'result.html';
+        });
+    </script>
+</body>
+</html>
